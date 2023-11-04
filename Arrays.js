@@ -1,12 +1,12 @@
 //Map
-// let array = ["Dhananjay", "Ayush", "Charchit"];
-// let array1 = array.map(x=>upperCase(x));
+let array = ["Dhananjay", "Ayush", "Charchit"];
+let array1 = array.map((x) => upperCase(x));
 
-// function upperCase(x){
-//     let y=x.toUpperCase();
-//     return y;
-// }
-// console.log(array1);
+function upperCase(x) {
+  let y = x.toUpperCase();
+  return y;
+}
+console.log(array1);
 
 //FILTER
 
@@ -16,18 +16,19 @@ JavaScript functions do not check the number of arguments received.
 
 */
 
-// let numbersArray = [2, 3, 4, 5, 6, 7, 8, 9, 0];
-// function isEven(x) {  //
-//     if (x % 2 === 0) {
-//       return true;
-//     } else {
-//         console.log(x)
-//       return false;
-//     }
-//   }
-// let filterdArray = numbersArray.filter((x) =>isEven(x));
+let numbersArray = [2, 3, 4, 5, 6, 7, 8, 9, 0];
+function isEven(x) {
+  //
+  if (x % 2 === 0) {
+    return true;
+  } else {
+    console.log(x);
+    return false;
+  }
+}
+let filterdArray = numbersArray.filter((x) => isEven(x));
 
-// console.log(filterdArray);
+console.log(filterdArray);
 
 //Reduce
 
