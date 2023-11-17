@@ -27,4 +27,5 @@
     4. Does this make sense? Why?
 */
 
-console.log(([].prototype))
+// console.log(([].prototype))
+console.log(Object.getOwnPropertyNames(Object.__proto__))
