@@ -62,8 +62,7 @@
 // };
 
 // ayush.greet.call({name:"Dhananjay"},"hello",100);
-// ayush.greet.apply({name:"Dhananjay"},["hello",100])// Th eonly differnce between call ana apply is only thepasing of paraetrsis that 
-
+// ayush.greet.apply({name:"Dhananjay"},["hello",100])// Th eonly differnce between call ana apply is only thepasing of paraetrsis that
 
 // const student={
 //     name:"Anjali",
@@ -76,7 +75,6 @@
 // }
 // let boundGreet=student.friend.greet.bind({name:"Tania"});
 // boundGreet();
-
 
 // function student(name){
 //     this.name=name,
@@ -91,15 +89,49 @@
 // dhananjay.greet();
 // dhananjay.greet.call({name:"anjali"});
 
-let object={
-    name:"Pranav"
-}
-Object.prototype.greet=function(){
-    console.log(`hi ${this.name}`)
-}
-object.greet()
+// let object={
+//     name:"Pranav"
+// }
+// Object.prototype.greet=function(){
+//     console.log(`hi ${this.name}`)
+// }
+// object.greet()
 
+const iphone = {
+  name: "Iphone 15",
+  year: 2020,
+  color: "Red",
+  category: "Mobile",
+  wishlist: () => {
+    console.log("111111111", this);
+  },
+};
 
+const macbook = {
+  name: "macbook Pro",
+  year: 2020,
+  color: "Red",
+  category: "Laptop",
+  wishlist: function () {
+    console.log("111111111", this);
+  },
+};
 
-
-
+const products = {
+  name: "Iphone 15",
+  year: 2020,
+  color: "Red",
+  category: "Mobile",
+  display: function () {
+    let product = {
+      name: "Iphone 15",
+      year: 2020,
+      color: "Red",
+      category: "Mobile",
+      display: () => {
+        console.log(this);
+      },
+    };
+  },
+};
+iphone.wishlist();

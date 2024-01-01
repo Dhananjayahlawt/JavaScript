@@ -35,7 +35,6 @@ console.log(filterdArray);
 let numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let initialValue = 0;
 let sum_of_numbers = numbers_array.reduce(sum, initialValue);
-console.log(sum_of_numbers);
 function sum(accumaltor, value) {
   return accumaltor + value;
 }
